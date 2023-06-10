@@ -62,6 +62,7 @@ function pageContent()
 
 /**
  * Starts everything and displays the template.
+ * Here the run method
  */
 function run()
 {
