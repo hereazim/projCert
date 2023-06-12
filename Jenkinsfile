@@ -19,7 +19,7 @@ pipeline{
             steps{
                 script{
                     bat 'docker login -u kaazim -p Azimka@01#'
-                    bat 'docker push kaazim/phpApp'
+                    bat 'docker push phpApp'
                 }
             }
         }
