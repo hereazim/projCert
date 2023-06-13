@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Build App'){
             steps{
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/hereazim/projCert.git']])
+                checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/hereazim/projCert.git']])
             
             }
         }
