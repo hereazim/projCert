@@ -10,7 +10,7 @@ pipeline{
         stage('Build Docker'){
             steps{
                 script{
-                    bat 'docker build -t kaazim/phpApp .'
+                    bat 'docker build -t kaazim/phpapp .'
                     
                 }
             }
@@ -19,7 +19,7 @@ pipeline{
             steps{
                 script{
                     bat 'docker login -u kaazim -p Azimka@01#'
-                    bat 'docker push kaazim/phpApp'
+                    bat 'docker push kaazim/phpapp'
                 }
             }
         }
