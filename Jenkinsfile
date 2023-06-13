@@ -4,7 +4,7 @@ pipeline{
         stage('Build App'){
             steps{
                 checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/hereazim/projCert.git']])
-                build 'Check-in'
+            
             }
         }
         stage('Build Docker'){
